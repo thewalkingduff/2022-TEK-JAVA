@@ -1,0 +1,29 @@
+.flex-container {
+    width: 40%;
+    height: 500px;
+    margin: 100px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background-color: black;
+}
+.flex-item {
+    background-color: beige;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 100px;
+}
+.flex-item-expanded {
+    background-color: bisque;
+    width: 500px;
+}
+.first-item {
+    order: 1;
+}
+.second-item {
+    order: 2;
+}
+.last-item {
+    order: -1;
+}
