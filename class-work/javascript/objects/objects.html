@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    let student = { 
+        firstName: "John", 
+        lastName: "Doe", 
+        age: 30, 
+        class: {
+            name: "Java developer",
+            time: "Every Day"
+        },
+        arr: ["abc", "def", "ghi", "jkl"]
+     };
+     console.log(student);
+     console.log(student.firstName + " = " + student["firstName"]);
+     console.log(student.lastName);
+     console.log(student.class.name);
+     console.log(student.arr[2]);
+
+     student.firstName = "Sara";
+     student[lastName] = "Wilson";
+
+     for (key in student) {
+        let value = student[key];
+        console.log("!!!!!!!!!!! " + key + " " + value);
+    }
+
+    var a = new Array(10);
+    a[0] = 0;
+    a[1] = "string";
+    a[2] = 1;
+    a.length = 4;
+
+    a.push("next to last value")
+    a.push("last value");
+
+    let pop = a.pop();
+
+    console.log(a);
+
+
+    var fruits = ["Banana", "Orange", "Apple", "Mango"];
+    fruits.sort();        // Sorts the elements of fruits
+    console.log(fruits)
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
