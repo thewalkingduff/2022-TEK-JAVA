@@ -6,7 +6,7 @@ const numbers = prompt("Enter numbers: ");
 
 
 function addIntegers(numbers) {
-    let arrayStrings = numbers.split(" ");
+    let arrayStrings = numbers.split(" ").filter(el => el !== "+");
     const arrOfNums = arrayStrings.map(str => {
         return Number(str);
     })
