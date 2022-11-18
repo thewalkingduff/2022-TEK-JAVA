@@ -17,12 +17,15 @@ import lombok.ToString;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-@Table(name="course")
+@Table(name="Course")
 public class Course {
 	
 	@Id
 	@Column(name="id")
 	private Integer id;
+
+	@Column(name="instructor")
+	private String instructor;
 	
 	@Column(name="name")
 	private String name;
